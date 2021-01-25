@@ -1,0 +1,13 @@
+name = "Bildefin"
+uuid = "4eb6cd15-98f7-4076-9261-fb41dd56c18e"
+authors = ["Erik Engheim <erik.engheim@mac.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
