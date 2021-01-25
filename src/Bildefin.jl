@@ -1,5 +1,7 @@
+"A collection of functions and types for manipulating image data and doing computer vision."
 module Bildefin
 
-# Write your package code here.
+include("utils.jl")
+include("opencv-wrapper.jl")
 
 end
