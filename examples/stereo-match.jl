@@ -22,7 +22,9 @@ function plot_multiple_matches(leftfile::AbstractString, rightfile::AbstractStri
     for num_disparities in [45, 96, 128], block_size in [6, 15, 31]
         stereo = StereoBM(num_disparities=96, block_size=15)
         disparity = compute(stereo, imgL, imgR)
-        plt = plot(disparity, title="num_disparities=$num_disparities, block_size=$block_size")
+        plt = plot(disparity, 
+            title="num_disparities=$num_disparities, block_size=$block_size", 
+            titlefont=font(6))
         push!(plots, plt)
     end
     plot(plots...)
